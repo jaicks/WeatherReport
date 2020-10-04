@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+.al_card {
+  box-shadow: 0px -1px 8px 0 rgb(0, 0, 0);
+  border-radius: 10px !important; 
+  color: black;
+  background-color: #17a2b8d9;
+  width: 150px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.al_card:hover {
+  box-shadow: 0px 0px 16px 1px #ffc107;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active_card {
+  box-shadow: 0px 0px 16px 1px #ffc107;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ /* weather page css */
+
+ .bg {
+  /* background-image: url('https://images.unsplash.com/photo-1468413253725-0d5181091126'); */
+
+  background-image:radial-gradient(circle at 48% 46%, #f5fafe, #d0ebff 115%, #d8d8d8 115%);
+  /* height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color:rgb(0 0 0);
+}
+
+.container {
+  min-width: 500px;
+}
+
+h1 {
+  margin-top: 25%;
+  margin-bottom: 50px;
+  padding: 50px;
+  font-size: 6em;
+  font-weight: 300;
+/*   border: 2px solid red; */
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.border {
+  border: 2px solid #FFFFFF;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2em;
+}
+
+.border-right {
+  border-right: 1px solid #FFFFFF;
+}
+
+.hor-line {
+  margin-top:10px;
   color: white;
+  border-bottom: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+.temp {
+  font-size: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-left {
+  padding-left: 20px;
+}
+
+.settings {
+  border: none;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.settings_selected {
+  border: 1px white solid;
+  border-radius: 50%;
+}
+
+button:focus {
+  outline:0;
+}
+
+ /* Media Queries */
+/* For mobile devices */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2em;
   }
-  to {
-    transform: rotate(360deg);
+  p {
+    font-size: 1.6em;
   }
+}
+
+/* header */
+
+.title {
+  font-size: 1.5rem;
+  word-spacing: 0px;
+  font-weight: 700;
+  -webkit-text-decoration: none solid #0a2745;
+  text-decoration: none solid #0a2745;
+  color: #3973b1;
+}
+/* detailed_report_icon */
+
+.detailed_report_icon{
+  width: 80px;
+    margin: auto;
+}
+
+.detailed_report_bg{
+  background-color: rgb(210 46 46 / 70%);
+}
+
+/* search_button */
+.search_button{
+  width: 155px;
+  height: 38px;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #2936b5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
